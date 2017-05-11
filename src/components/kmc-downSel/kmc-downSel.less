@@ -1,0 +1,49 @@
+@import '../../res/kmc-common';
+
+.kmc{
+    &.kmc-downSel{
+        border: solid 1px @color1;
+        border-radius: 14px;
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+            height: 28px;
+            line-height: 28px;
+            font-size: @font-size4;
+            color: @color5;
+            margin: 4px 0 4px 0;
+            padding-left: 13px;
+            &:hover{
+                background: @color6;
+            }
+        }
+        .select{
+            height: 28px;
+            display: -webkit-flex;
+            -webkit-align-items: center;
+            -webkit-justify-content: space-between;
+            padding: 0 13px 0 13px;
+            label{
+                font-size: @font-size4;
+                color: @color3;
+                font-family: @font-family-strong;
+            }
+        }
+        .select-close{
+            .mixin-class;
+            background: url("../../res/img/image/down_sel_down.png") center center no-repeat no-repeat;
+        }
+        .select-open{
+            .mixin-class;
+            background: url("../../res/img/image/down_sel_up.png") center center no-repeat no-repeat;
+        }
+    }
+    .mixin-class{
+        width: 43px;
+        height: 23px;
+        zoom: 0.3;
+    }
+}

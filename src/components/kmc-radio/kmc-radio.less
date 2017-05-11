@@ -1,0 +1,38 @@
+@import '../../res/kmc-common';
+
+.kmc{
+    &.kmc-radio{
+        .radio-label{
+            margin: 10px 20px 0 0;
+            display: inline-block;
+        }
+        .radio-input{
+            display: none;
+            &:checked+.radio-span{
+                &:after{
+                    background-color: @color1;
+                    border-radius: 100%;
+                    content: "";
+                    display: inline-block;
+                    height: 11px;
+                    margin: 4px;
+                    width: 11px;
+                }
+            }
+        }
+        .radio-span{
+            background-color: @color11;
+            border: 1px solid @color1;
+            border-radius: 100%;
+            display: inline-block;
+            height: 19px;
+            margin-right: 5px;
+            vertical-align: middle;
+            width: 19px;
+        }
+        span{
+            font-size: @font-size2;
+            color: @color4;
+        }
+    }
+}

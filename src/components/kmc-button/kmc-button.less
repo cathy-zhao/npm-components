@@ -1,0 +1,49 @@
+@import '../../res/kmc-common';
+
+.kmc{
+    &.kmc-button{
+        border: solid @color1 0px;
+        border-radius: 32px;
+        width: 123px;
+        height: 32px;
+        color: @color11;
+        background-color: @color1;
+        box-shadow: 0px 7px 7px @color20;
+        font-size: @font-size5;
+        font-family: @font-family-strong;
+        outline: none;
+        &, &.middle, &.default{
+            .mixin-class;
+        }
+        &.large{
+            border-radius: 44px;
+            width: 190px;
+            height: 44px;
+            .mixin-class;
+        }
+        &.small{
+            border-radius: 14px;
+            width: 80px;
+            height: 28px;
+            box-shadow: 0px 5px 5px @color20;
+            font-family: @font-family-normal;
+            .mixin-class;
+        }
+        &.fat{
+            border-radius: 14px;
+            width: 79px;
+            height: 51px;
+            font-family: @font-family-normal;
+            .mixin-class;
+        }
+    }
+    .mixin-class{
+        &-ok, &.ok{
+        }
+        &-cancel, &.cancel, & cancel{
+            border: solid @color1 1px;
+            color: @color4;
+            background-color: @color11;
+        }
+    }
+}

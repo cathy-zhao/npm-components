@@ -1,0 +1,70 @@
+@import '../../res/kmc-common';
+
+.kmc{
+    &.kmc-input{
+        border: solid @color1 1px;
+        height: 28px;
+        line-height: 28px;
+        align-items: center;
+        width: 100%;
+        border-radius: 14px;
+        -webkit-flex-grow: 1;
+        display: -webkit-flex;
+        input{
+            border: solid @color1 0px;
+            height: 20px;
+            width: 60%;
+            outline: none;
+            float: left;
+            margin: 0 3% 0 3%;
+            font-size: @font-size6;
+            color: @color3;
+            -webkit-flex-grow: 1;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);//透明度设置为0
+        }
+        input::-webkit-input-placeholder{
+            text-align: center;
+        }
+        button{
+            border: solid @color1 0px;
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+            width: 70px;
+            height: 28px;
+            float: left;
+            background-color: @color1;
+            font-size: @font-size5;
+            color: @color11;
+            outline: none;
+            -webkit-tap-highlight-color: @color21;
+        }
+        .input-plus{
+            width: 37px;
+            height: 37px;
+            zoom: 0.4;
+            margin-right: 3%;
+            background: url("../../res/img/image/input_plus.png") center center no-repeat no-repeat;
+        }
+        .input-minus{
+            width: 37px;
+            height: 37px;
+            zoom: 0.4;
+            margin-left: 3%;
+            background: url("../../res/img/image/input_minus.png") center center no-repeat no-repeat;
+        }
+        .input-timing{
+            width: 50px;
+            height: 47px;
+            zoom: 0.4;
+            margin-right: 3%;
+            background: url("../../res/img/image/input_timing.png") center center no-repeat no-repeat;
+        }
+        .input-arrow{
+            width: 23px;
+            height: 42px;
+            zoom: 0.4;
+            margin-right: 3%;
+            background: url("../../res/img/image/input_arrow.png") center center no-repeat no-repeat;
+        }
+    }
+}
